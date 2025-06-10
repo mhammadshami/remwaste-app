@@ -45,7 +45,7 @@ This project contains a clean, tested React component that displays **skip (wast
 
 2. **Run the project**:
    ```bash
-   npm start
+   npm run dev
    ```
 
 3. **Preview example usage**:  
@@ -66,20 +66,29 @@ This project contains a clean, tested React component that displays **skip (wast
 ## 🔨 Code structure
 
 ```
-src/
-├─ components/
-│  ├─ PriceSection.tsx           # Memoized panic price + VAT formatting
-├─ utils/
-│  ├─ formatPriceWithVAT.ts      # Pure formatter util with currency logic
-├─ featureList/                  # (Based on previous tasks)
-│  ├─ useFeatureItems.tsx        # Custom hook building icon/text list
-│  ├─ featureListItem/
-│  │  ├─ FeatureListItem.tsx     # Individual list item component
-│  │  └─ FeatureListItem.types.ts# Prop and item types
-│  ├─ FeaturesList.tsx           # List wrapper component
-│  └─ featuresList.utils.ts      # Optional: builder utility (non-hook)
-```
-
+src
+├─ common/
+   ├─ components/
+      ├─ stepper/ 
+         │─Stepper.tsx 
+         ├─ Stepper.types.ts
+         ....
+   ├─ api/              
+   ├─ constants/
+   ├─ types/         
+   ├─ utils/  
+      ├─ priceUtils.ts  
+      ....
+├─ pages/  
+   ├─ skipHirePage/
+      SkipHirePage.tsx
+      ├─ components/
+      ├─ hooks/
+      ├─ types/         
+      ├─ utils/   
+├─ store/
+   ├─ useStepperStore.tsx
+App.tsx
 ---
 
 ## ✅ Why this approach
@@ -129,8 +138,3 @@ This setup demonstrates:
 - **Optimized performance** using `memo` and `useMemo`
 - Readable, maintainable, and testable structure—suitable for professional-quality work
 
----
-
-### 📧 Questions?
-
-I’d be happy to walk through my approach, the reasoning behind separation of concerns, or go over how I've set up unit testing. Let me know!
