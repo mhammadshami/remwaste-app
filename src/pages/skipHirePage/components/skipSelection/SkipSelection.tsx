@@ -3,7 +3,7 @@ import React, { memo, useState } from "react";
 // components
 import SkipCard from "./skipCard/SkipCard";
 import SelectionSummary from "./selectionSummary/SelectionSummary";
-import HeaderSection from "./headerSection/headerSection";
+import HeaderSection from "./headerSection/HeaderSection";
 import LoadingSpinner from "../../../../common/components/ui/loadingSpinner/LoadingSpinner";
 import ErrorMessage from "../../../../common/components/ui/errorMessage/ErrorMessage";
 
