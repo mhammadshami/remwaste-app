@@ -23,10 +23,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ) => {
     const baseClasses = clsx(
       "font-semibold rounded-lg transition-all duration-300 focus:outline-none",
-      "focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50",
+      "focus:ring-2 focus:ring-offset-2 focus:ring-secondary",
       "disabled:opacity-60 disabled:cursor-not-allowed",
-      "active:scale-[0.98] transform-gpu", // Subtle press effect
-      "flex items-center justify-center gap-2", // For icon support
+      "active:scale-[0.98] transform-gpu", 
+      "flex items-center justify-center gap-2", 
       fullWidth && "w-full",
       {
         // Sizes
@@ -40,13 +40,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       // Primary
       "bg-secondary text-white shadow-md hover:shadow-lg hover:from-[#0c1a40] hover:to-[#223264]":
         variant === "primary" && !isSelected,
-      "bg-gradient-to-r from-[#1a2a56] to-[#3a4a7a] text-white shadow-lg ring-2 ring-offset-1 ring-blue-300":
+      "bg-gradient-to-r from-[#1a2a56] to-[#3a4a7a] text-white shadow-lg ring-2 ring-offset-1 ring-secondary":
         variant === "primary" && isSelected,
 
       // Secondary
       "bg-white text-gray-800 border border-gray-200 shadow-sm hover:bg-gray-50 hover:shadow":
         variant === "secondary" && !isSelected,
-      "bg-gray-100 text-gray-900 border border-gray-300 shadow-inner ring-1 ring-gray-200":
+      "bg-gray-100 text-gray-900 border border-gray-300 shadow-inner ring-1 ring-secondary":
         variant === "secondary" && isSelected,
     });
 

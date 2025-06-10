@@ -19,8 +19,7 @@ const HeaderSection: React.FC<HeaderSectionProps> = memo(({
         className={clsx(
           "uppercase text-primary text-2xl sm:text-3xl lg:text-4xl",
           "font-bold mb-2 sm:mb-3",
-          "tracking-tight leading-tight",
-          "transition-colors duration-300 hover:text-primary-dark"
+          "tracking-tight leading-tight"
         )}
       >
         {title}

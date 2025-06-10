@@ -30,9 +30,9 @@ const SkipCard: React.FC<SkipCardProps> = memo(({
     "border-[0.5px] border-solid cursor-pointer bg-white",
     "shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out",
     "transform hover:scale-[1.01] focus:outline-none",
-    "focus-visible:ring-2 focus-visible:ring-primary/80",
+    "focus-visible:ring-2 focus-visible:ring-secondary",
     {
-      "ring-2 ring-primary/95 scale-[1.01]": isSelected,
+      "ring-2 ring-secondary scale-[1.01]": isSelected,
       "border-gray-100 hover:border-indigo-100": !isSelected,
     },
     className

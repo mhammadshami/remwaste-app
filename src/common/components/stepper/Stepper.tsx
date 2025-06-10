@@ -7,10 +7,10 @@ import { DEFAULT_STEPS, MAX_STEPPER_STEP } from "../../constants/constants";
 import type { StepperProps } from "../../types/types";
 
 // hooks
-import { useStepper } from "../../hooks/useStepper";
+import { useStepperStore } from "../../../store/useStepperStore";
 
 const Stepper = ({ steps = DEFAULT_STEPS, className = "" }: StepperProps) => {
-  const { currentStep } = useStepper(MAX_STEPPER_STEP);
+  const { currentStep } = useStepperStore();
 
   const validatedCurrentStep = Math.max(
     0,
