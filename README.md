@@ -1,10 +1,10 @@
 ## 📸 Screenshots
 
 ### Stepper
-![Stepper Screenshot](./assets/screenshots/schreenshot-1.png)
+![Stepper Screenshot](./public/assets/screenshots/screenshot-1.png)
 
 ### Skip Cards & Selection Summary
-![Skip Cards & Selection Summary Screenshot](./assets/screenshots/schreenshot-2.png)
+![Skip Cards & Selection Summary Screenshot](./public/assets/screenshots/screenshot-2.png)
 
 # 🗑️ Skip Booking App — Price & Feature Display Component
 
