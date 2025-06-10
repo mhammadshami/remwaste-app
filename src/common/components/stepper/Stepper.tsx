@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 // constants
-import { DEFAULT_STEPS, MAX_STEPPER_STEP } from "../../constants/constants";
+import { DEFAULT_STEPS } from "../../constants/constants";
 
 // types
 import type { StepperProps } from "../../types/types";
