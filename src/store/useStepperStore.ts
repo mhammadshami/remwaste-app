@@ -39,4 +39,5 @@ export const useStepperStore = create<StepperStore>((set, get) => ({
   get isLastStep() {
     return get().currentStep === get().maxStep;
   },
+  
 }));
